@@ -1,0 +1,63 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+#categories {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.item li {
+  font-size: 18px;
+}
+.ingredients-list {
+  color: palevioletred;
+  font-size: 22px;
+}
+#gallery {
+  width: 1260px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#gallery img {
+  width: 90%;
+  display: block;
+}
+#counter {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  font-size: 35px;
+}
+#counter > button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 25px;
+}
+#value {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#font-size-control {
+  display: block;
+  margin-top: 25px;
+}
+#name-input {
+  display: block;
+  margin-bottom: 15px;
+}
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+#validation-input.invalid {
+  border-color: #f44336;
+}
+#validation-input.valid {
+  border-color: #4caf50;
+}
+/* #text {
+  font-size: 35px;
+} */
