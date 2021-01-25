@@ -6,5 +6,5 @@ const inputTextRef = document.querySelector('#name-input');
 const outputTextRef = document.querySelector('#name-output');
 
 inputTextRef.addEventListener('input', event => {
-     event.target.value === '' ? outputTextRef.textContent = "незнакомец" : outputTextRef.textContent = event.target.value;
+     outputTextRef.textContent = event.target.value || "незнакомец";
 });

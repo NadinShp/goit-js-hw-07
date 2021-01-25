@@ -6,7 +6,6 @@
 
 const inputValidDataRef = document.querySelector('#validation-input');
 const requairedCount = Number(inputValidDataRef.dataset.length);
-console.log(typeof requairedCount);
 
 inputValidDataRef.addEventListener('change', event => {
     const currentCountData = event.target.value;

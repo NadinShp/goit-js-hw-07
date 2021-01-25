@@ -7,6 +7,14 @@
 const categoriesRef = document.querySelector('#categories');
 const itemsRef = categoriesRef.querySelectorAll('.item');
 
+const arrayCategories = Array.from(itemsRef);
+let totalCountCategories = 0;
+
+arrayCategories.reduce((acc, item) => { totalCountCategories += 1 }, 0);
+
+console.log(`Колличество категорий: ${totalCountCategories}`);
+// console.log(`Колличество категорий: ${itemsRef.length}`);
+
 const categoryElements = itemsRef.forEach(itemRef => {
     console.log(`Категория: ${itemRef.firstElementChild.textContent}`);
     console.log(`Количество элементов: ${itemRef.lastElementChild.children.length}`);

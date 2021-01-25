@@ -10,13 +10,6 @@
 import images from "./images.js";
 const galleryRef = document.querySelector('#gallery');
 
-const createGallary = images.map(image => {
-    const galleryList = document.createElement('li');
-    galleryList.insertAdjacentHTML('beforeend', '<img>');
-    const img = galleryList.firstElementChild;
-    img.classList.add('img');
-    img.alt = image.alt;
-    img.src = image.url;
-    return galleryList;
+images.map(image => {
+    galleryRef.insertAdjacentHTML('beforeEnd', `<li><img src="${image.url}" alt="${image.alt}"></li>`)
 });
-galleryRef.append(...createGallary);

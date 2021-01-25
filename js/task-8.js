@@ -17,14 +17,15 @@ const buttonOfCreateRef = document.querySelector('button[data-action="render"]')
 const buttonOfDestroyRef = document.querySelector('button[data-action="destroy"]');
 const boxesRef = document.querySelector('#boxes');
 
-inputFromUserRef.addEventListener('change', event => {
-  const userNumber = Number(event.target.value);
-});
+let userNumber = 0;
 
-const createBoxes = function (userNumber) {
+inputFromUserRef.addEventListener('change', event => {
+  userNumber = Number(event.target.value);
+});
+const createBoxes = userNumber => {
   console.log(userNumber);
   let i = 0;
-  while (i < userNumber) {//не пердается число через переменную. Что я делаю не правильно?
+  while (i < userNumber) {
     const createdDiv = document.createElement('div');
     createdDiv.style.height = '30px';
     createdDiv.style.width = '30px';
