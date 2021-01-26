@@ -58,6 +58,12 @@
 #validation-input.valid {
   border-color: #4caf50;
 }
-/* #text {
-  font-size: 35px;
-} */
+#controls {
+  margin-top: 20px;
+}
+#controls > button {
+  margin-left: 25px;
+}
+#controls > input {
+  border: 1px solid black;
+}
